@@ -117,138 +117,6 @@ body {
 	padding-top: 6em;
 	}
 
-	#konten {
-	float: left;
-	width: 100%;
-	margin-top:15px;
-}
-#konten #konten_a {
-	width:1250px;
-	
-	margin-right:150px;
-	margin-left: 150px;
-}
-
-#konten_a #konten_b {
-	background-color: #FFF;
-	float: left;
-	width:1050px;
-	border: 1px solid #dadada;
-	-moz-border-radius-topleft			: 10px;
-	-webkit-border-top-left-radius		: 10px;
-	border-top-left-radius				: 10px;
-	-moz-border-radius-bottomleft		: 10px;
-	-webkit-border-bottom-left-radius	: 10px;
-	border-bottom-left-radius			: 10px;
-	-moz-border-radius-topright			: 10px;
-	-webkit-border-top-right-radius		: 10px;
-	border-top-right-radius				: 10px;
-	-moz-border-radius-bottomright		: 10px;
-	-webkit-border-bottom-right-radius	: 10px;
-	border-bottom-right-radius			: 10px;
-}
-
-#konten_b #konten_c {
-	float:left;
-	padding:10px;
-	width:1050px;
-}
-#konten_float_l {
-	width: 700px; 
-	padding-right: 30px; 
-	float:left; 
-}
-
-
-
-#konten_float_l_a {
-	padding:30px; 
-	font-size:18px;
-	margin-left:70px;
-	text-align: center;	
-}
-
-#konten_float_l_a a{
-	background:#E80000;
-	padding:10px; 
-	color:#FFF; 
-	display: block; 
-	text-decoration: none; 
-	padding:10px;	
-	border:none; 
-	border-radius:3px; 	
-}
-#konten_float_l_a a:hover{
-	text-decoration:none;
-	box-shadow: 0px 0px 1px 1px #50A2F8;
-	background: #002B58;
-    padding:10px;
-	border:none;
-    border-radius:3px;
-}
-#konten_float_r {
-	padding-right: 60px; 
-	float:center;
-	padding:20px;
-	margin-left: 10px;
-}
-#cleaner{
-	width:auto; 
-	clear:both;
-	}
-#konten_float_l_b {
-	width:300;
-	padding:20px;
-	float:left;
-	text-align:center; 
-	border-right:dotted #E10000;
-	
-	}
-
-#konten_float_l_bc {
-	width:300;
-	padding:20px;
-	float:left;
-	text-align:center; 
-	}
-
-#legals {
-	background:#DF0000;
-	color:#FFF;
-	padding:50px;
-	margin-top: 0px;
-	margin-left: 714px;
-	margin-right: 44px;
-	margin-bottom: 30px;
-	}
-
-#legals h1{
-	color:#fff;
-	font-family:sans-serif;
-	font-size:24px; 
-	text-align:center;
-	margin-top: 0px;
-}
-
-#legals p{
-	color:#fff;
-	font-family:sans-serif;
-	font-size:12px; 
-	text-align:left;
-	margin-left: 0px;
-}
-
-#kontak {
-	width: 700px; 
-	padding-right: 30px; 
-	float:left; 
-}
-
-
-h2{ color: #E80000; font-weight: normal; }
-h2 { font-size: 24px; margin: 0 0 25px; padding: 5px 0; }
-
-
 .icon {
 	text-decoration: none;
 	border-bottom: none;
@@ -288,7 +156,6 @@ ul.icons li .icon:before {
 	background: #f6f6f6;
 	color: #aaa;
 	text-align: center;
-
 	}
 
 #footer a {
@@ -298,7 +165,6 @@ ul.icons li .icon:before {
 	transition: color 0.2s ease-in-out;
 	color: #aaa;
 	text-decoration: none;
-
 	}
 
 #footer a:active, #footer a:hover {
@@ -311,7 +177,6 @@ ul.icons li .icon:before {
 
 #footer .icons li {
 	padding-right: 2.5em;
-	margin-top: 100px;
 	}
 
 #footer .icons li:last-child {
