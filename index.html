@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Yanie Media</title>
+    <!-- API, JSON-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDStFXIoe_x5tQPbb7CfqPvRo2KREU44fk"></script>
+    <!-- Local CSS -->    
+    <link rel="stylesheet" href="css/ImageSlide.css" />
+    <link rel="stylesheet" href="css/FA.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Local Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/mapscfg.js"></script>
+    <script src="js/watch.js"></script>
+    <script>
+      var app = angular.module("indexApp",["ngRoute"]);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when("/",{
+          templateUrl : "home.html"
+        })
+        .when("/product",{
+          templateUrl : "product.html"
+        })
+        .when("/client",{
+          templateUrl : "client.html"
+        })
+        .when("/contact",{
+          templateUrl : "contact.html"
+        })
+        .when("/weather", {
+          templateUrl : "weather.html", controller : "indexCtrl"
+        })
+      })
+
+      app.controller('indexCtrl',function($scope, $http){
+        $http.get('http://api.openweathermap.org/data/2.5/weather?q=Jakarta,id&appid=f54dacce60037a04b6bcfedb5b63770e')
+        .then(function(response){
+          $scope.weather = response.data;
+      });
+    })
+    </script>
+  </head>
+  <body>
+    <div ng-app="indexApp" class="container-fluid">
+  <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Yanie Media</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#!product">Product</a></li>
+              <li><a href="#!client">Client</a></li>
+              <li><a href="#!contact">Contact</a></li>
+              <li><a href="#!weather">Weathers</a></li>
+            </ul>
+             <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+  
+  <ng-view> </ng-view>
+</div>
+
+
+  <footer id="footer">
+        <div class="container" ng-controller="indexCtrl">
+          <ul class="icons">
+            <li><a href="#" class="icon fa-facebook"></a></li>
+            <li><a href="#" class="icon fa-twitter"></a></li>
+            <li><a href="#" class="icon fa-instagram"></a></li>
+          </ul>
+          <ul class="copyright">
+            <div class="col-md-12">
+            <li><div id="watch"></div></li>
+            <li>&copy; 2018 Yanie Media Advertising</li>
+            <li>{{weather.main.temp}}</li>
+        </div>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>
