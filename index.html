@@ -11,10 +11,12 @@
     <!-- Local CSS -->    
     <link rel="stylesheet" href="css/ImageSlide.css" />
     <link rel="stylesheet" href="css/FA.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Local Javascript -->
     <script src="js/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
@@ -49,8 +51,10 @@
     })
     </script>
   </head>
+
   <body>
     <div ng-app="indexApp" class="container-fluid">
+
   <nav class="navbar navbar-inverse">
         <div class="container">
           <div class="navbar-header">
@@ -81,15 +85,15 @@
   <footer id="footer">
         <div class="container" ng-controller="indexCtrl">
           <ul class="icons">
-            <li><a href="#" class="icon fa-facebook"></a></li>
-            <li><a href="#" class="icon fa-twitter"></a></li>
-            <li><a href="#" class="icon fa-instagram"></a></li>
+             <li><div id="watch"> </div></li>
           </ul>
           <ul class="copyright">
             <div class="col-md-12">
-            <li><div id="watch"></div></li>
-            <li>&copy; 2018 Yanie Media Advertising</li>
-            <li>{{weather.main.temp}}</li>
+              <li>&copy; 2018 Yanie Media Advertising</li>
+           <li><a href="#" class="icon fa-facebook"></a></li>
+            <li><a href="#" class="icon fa-twitter"></a></li>
+            <li><a href="#" class="icon fa-instagram"></a></li>
+            
         </div>
           </ul>
         </div>

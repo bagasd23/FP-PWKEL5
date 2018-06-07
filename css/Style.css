@@ -1,0 +1,87 @@
+#konten {
+	float: auto;
+	width: auto;
+	margin-top:15px;
+}
+#konten #konten_a {
+	width:auto;
+	
+	margin-right:150px;
+	margin-left: 150px;
+}
+
+#konten_a #konten_b {
+	background-color: #FFF;
+	float: left;
+	width:auto;
+	border: 1px solid #dadada;
+}
+
+#konten_b #konten_c {
+	float:left;
+	padding:10px;
+	width:auto;
+}
+#konten_float_l {
+	width: 100%; 
+	padding-right: 30px; 
+	float:left; 
+}
+
+
+#konten_float_l_a {
+	padding:30px; 
+	font-size:18px;
+	margin-left:70px;
+	text-align: center;	
+}
+
+#konten_float_l_a button{
+	background:#E80000;
+	border:none; 
+	border-radius:3px; 	
+	width: 200px;
+}
+#konten_float_r {
+	padding-right: 60px; 
+	float:center;
+	padding:20px;
+	margin-left: 10px;
+}
+#cleaner{
+	width:auto; 
+	clear:both;
+	}
+
+#konten_float_l_b {
+	width:100;
+	padding:50px;
+	float:center;
+	text-align:center; 
+	}
+#konten_float_l_b img {
+	width: 100px;
+	height: 100px; 
+	}
+
+#konten_float_l_bb {
+	width:200;
+	padding:20px;
+	float:left;
+	text-align:center; 
+	}
+#konten_float_l_bb img {
+	width: 100px;
+	height: 100px; 
+	}
+
+#konten_float_l_bc {
+	width:200;
+	padding:20px;
+	float:left;
+	text-align:center; 
+	}
+#konten_float_l_bc img {
+	width: 100px;
+	height: 100px; 
+	}
